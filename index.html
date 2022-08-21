@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+    <meta charset="utf-8">
+    <title>Birds of New Zealand!</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Birds of New Zealand</h1>
+    </header>
+    <main>
+        <section class="search-panel">
+            <form>
+                <h2>Bird Search Filter</h2>
+                <label for="search-bar">Enter Bird Name:</label> <br>
+                <input type="text" name="search-bar" onkeyup="filterByName()" id="search-bar" placeholder="Enter Name Here..."> <br>
+
+                <!-- Conservation Status Dropdown -->
+                <label for="status">Conservation Status</label> <br>
+                <select name="status" onchange="filterByStatus()" id="status">
+                    <option value="all">All</option> 
+                </select>
+
+                <!-- Conservation Legend -->
+            <section id="legend">
+                <h3 style="text-align:center;">Conservation Legend</h3>
+                <hr>
+            </section>
+            </form>
+        </section>
+
+        <div class="bird-display" id="bird-display">
+
+        </div>
+    </main>
+    <footer>
+        <p>Data licensed from <a target="_blank" href="https://www.birdsnz.org.nz/">Birds New Zealand</a> for
+            educational use within the University of Otago.</p>
+    </footer>
+</body>
+
+</html>
